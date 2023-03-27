@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather" translatesAutoresizingMaskIntoConstraints="NO" id="rQv-hK-Bdw">
+                                <rect key="frame" x="146.66666666666666" y="376" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Dia-Ch-pWL"/>
+                                    <constraint firstAttribute="height" constant="100" id="qMv-27-2a0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching the weather..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anB-el-3fH">
+                                <rect key="frame" x="109.66666666666667" y="481" width="173.66666666666663" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="8Dn-l4-hYS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa7-Hi-oGN">
+                                <rect key="frame" x="145.66666666666666" y="780" width="101.66666666666666" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="ag5-Sf-syK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rQv-hK-Bdw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5KT-yN-JS0"/>
+                            <constraint firstItem="anB-el-3fH" firstAttribute="top" secondItem="rQv-hK-Bdw" secondAttribute="bottom" constant="5" id="AKM-cw-igd"/>
+                            <constraint firstItem="anB-el-3fH" firstAttribute="centerX" secondItem="rQv-hK-Bdw" secondAttribute="centerX" id="BEl-DV-8nZ"/>
+                            <constraint firstItem="Sa7-Hi-oGN" firstAttribute="centerX" secondItem="anB-el-3fH" secondAttribute="centerX" id="G80-3x-Ean"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Sa7-Hi-oGN" secondAttribute="bottom" constant="14" id="TpO-RS-948"/>
+                            <constraint firstItem="rQv-hK-Bdw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ehJ-pA-2Zy"/>
+                            <constraint firstItem="anB-el-3fH" firstAttribute="centerX" secondItem="Sa7-Hi-oGN" secondAttribute="centerX" id="r6x-mw-ci0"/>
+                            <constraint firstItem="anB-el-3fH" firstAttribute="centerX" secondItem="rQv-hK-Bdw" secondAttribute="centerX" id="zXW-U1-DP7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weather" width="20" height="20"/>
+    </resources>
+</document>
