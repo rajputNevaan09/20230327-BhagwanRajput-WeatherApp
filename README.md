@@ -11,7 +11,7 @@ You can install WeatherApp IOS App from the here or checkout through link by sid
 Search for "WeatherApp" by the given link in github 
 Tap "Get" to download and install the app
 Sideloading
-Clone the app's GitHub repository: git clone https://github.com/rajputNevaan09/20230324-BhagwanRajput-NYCSchools.git
+Clone the app's GitHub repository: git clone https://github.com/rajputNevaan09/20230327-BhagwanRajput-WeatherApp.git
 Open the app's project in Xcode
 Connect your iOS device to your computer
 Select your device from the Xcode device menu
